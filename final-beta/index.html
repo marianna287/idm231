@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your Zodiac Sign</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <form onsubmit="findZodiac(event)" class="formElements">
+                <input type="date" required>
+                <input type="submit" value="find your zodiac sign" onclick= "zodiacSign, zodiacDate"/>
+            </form>
+        </div>
+    </div>
+    <label>Your Zodiac sign is</label><p id="sign"></p><br>
+    <label> because your birthday falls between </label><p id="zodiac"></p><br>
+    <script src="index.js"></script>
+</body>
+</html>

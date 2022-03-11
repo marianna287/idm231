@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
+}
+
+body {
+    margin: 10rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 20vw;
+    height: 10vw;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 30px; 
+}
+
+input[type="date"], input[type= "submit"] {
+    padding: 0 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    background-color: yellow;
+}
+
+input[type="submit"] {
+    background-color: pink;
+    cursor: pointer;
+    margin-top: 2px;
+    border: 2px solid transparent;
+    transition: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border: 2px solid pink;
+}
+
+input:focus {
+    outline:none;
+}
