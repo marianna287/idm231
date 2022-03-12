@@ -48,5 +48,5 @@ const findZodiac = (event) => {
         zodiacDate = "December 22nd - January 19th";
     }
     document.getElementById("sign").innerHTML = zodiacSign;
-    document.getElementByID("zodiac").innerHTML = zodiacDate;
+    document.getElementById("zodiac").innerHTML = zodiacDate;
 };

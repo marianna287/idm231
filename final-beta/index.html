@@ -12,12 +12,20 @@
         <div class="card">
             <form onsubmit="findZodiac(event)" class="formElements">
                 <input type="date" required>
-                <input type="submit" value="find your zodiac sign" onclick= "zodiacSign, zodiacDate"/>
+                <input type="submit" value="find your zodiac sign" onclick= "zodiacDate"/>
             </form>
         </div>
     </div>
-    <label>Your Zodiac sign is</label><p id="sign"></p><br>
-    <label> because your birthday falls between </label><p id="zodiac"></p><br>
+    <div class="wrapperTwo">
+        <div class="zodiacAnswer">
+            <div class="zodiacHeader">
+                <label>Your Zodiac sign is</label><p id="sign"></p><br>
+            </div>
+            <div class="zodiacFooter">
+                <label> because your birthday falls between </label><p id="zodiac"></p><br>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

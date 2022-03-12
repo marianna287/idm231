@@ -53,5 +53,24 @@ input[type="submit"]:hover {
 }
 
 input:focus {
-    outline:none;
+    outline: none;
+}
+
+.headerTwo {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.zodiacAnswer {
+    padding: 2rem;
+    align-items: center;
+}
+
+#sign {
+    color: red;
+    font-size: 20px;
+    padding: 5px;
 }
