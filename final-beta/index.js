@@ -49,7 +49,7 @@ const findZodiac = (event) => {
         zodiacSign = "capricorn";
         zodiacDate = "December 22nd - January 19th";
     }
-   
+  
     document.getElementById("zodiac-sign").innerHTML = zodiacSign;
     document.getElementById("zodiac-date").innerHTML = zodiacDate;
 
@@ -89,3 +89,5 @@ soundButtons.forEach(function (individualButtonElement) {
     audioPlayer.play();
   });
 });
+
+  
