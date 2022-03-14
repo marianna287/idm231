@@ -54,40 +54,13 @@ const findZodiac = (event) => {
     document.getElementById("zodiac-date").innerHTML = zodiacDate;
 
     const imageElement = document.querySelector(".zodiacImage");
-    imageElement.src = "images/${zodiacSign}.png";
+    imageElement.src = "images/{zodiacSign}.png";
     imageElement.alt = zodiacSign;
 
 
 };    
 
-    
 
 
 
-const clickMeButton2 = document.querySelector(".js-click-me-2");
-clickMeButton2.addEventListener("click", function () {
-  const clickMeButtonContent2 = document.querySelector(".js-hidden-content-2");
-  if (clickMeButtonContent2.style.display == "none") {
-    clickMeButtonContent2.style.display = "block";
-  } else {
-    clickMeButtonContent2.style.display = "none";
-  }
-});
 
-// Array of buttons - [button1, button2, button3]
-const soundButtons = document.querySelectorAll(".js-click-me");
-const audioPlayer = document.querySelector("#speakers");
-
-// Loop through all buttons
-soundButtons.forEach(function (individualButtonElement) {
-  // Get the value of the "data-audio-file" attribute on this button
-  const audioTrackSource = individualButtonElement.getAttribute("data-audio-file");
-  // Add click event listener to each button
-  individualButtonElement.addEventListener("click", function () {
-    // https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API
-    audioPlayer.src = `.sounds/${audioTrackSource}`
-    audioPlayer.play();
-  });
-});
-
-  

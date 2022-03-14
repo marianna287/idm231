@@ -14,7 +14,8 @@
     <div class="stage">
         <div class="iconWrapper">
             <div id="aquarius">
-                <img src="images/aquarius.png" alt="Aquarius">
+                <img src="images/aquarius.png" alt="Aquarius"> 
+                <button class="click-me"></button>
             </div> 
             <div id="pisces"> 
                 <img src="images/pisces.png" alt="pisces">
@@ -68,25 +69,6 @@
             <h2 id="zodiac-date"></h2>
         </div>
     </main>
-
-    <div class="wrapper">
-        <div class="card">
-            <form onsubmit="findZodiac(event)" class="formElements">
-                <input type="date" required>
-                <input type="submit" value="find your zodiac sign" onclick= "zodiacDate"/>
-            </form>
-        </div>
-    </div>
-    <div class="wrapperTwo">
-        <div class="zodiacAnswer">
-            <div class="zodiacHeader">
-                <label>Your Zodiac sign is</label><p id="sign"></p><br>
-            </div>
-            <div class="zodiacFooter">
-                <label> because your birthday falls between </label><p id="zodiac"></p><br>
-            </div>
-        </div>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>
