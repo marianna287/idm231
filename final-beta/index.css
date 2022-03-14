@@ -2,20 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
-    overflow: hidden;
+    overflow: auto;
 }
 
-body {
-    margin: 10rem;
+main {
+    position: relative;
+    top: -42rem;
+    z-index: 999;
 }
+
+.header {
+    display: flex;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .wrapper {
-    width: 100%;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .card {
@@ -54,4 +66,261 @@ input[type="submit"]:hover {
 
 input:focus {
     outline:none;
+}
+
+.zodiacAnswer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.stage {
+    position: relative;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+div.iconWrapper {
+    width: 822px;
+    height: 822px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0;
+}
+
+#aquarius {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100%;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 361px;
+    top: 18px;
+}
+
+#aquarius img {
+    align-items: center;
+    padding: 18px;
+}
+
+#pisces {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 533px;
+    top: 64px;
+}
+
+#pisces img {
+    align-items: center;
+    padding: 18px;
+}
+
+#aries {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 658px;
+    top: 189px;
+}
+
+#aries img {
+    align-items: center;
+    padding: 18px;
+}
+
+#taurus {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 704px;
+    top: 361px;
+}
+
+#taurus img {
+    align-items: center;
+    padding: 18px;
+}
+
+#gemini {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 658px;
+    top: 532px;
+}
+
+#gemini img {
+    align-items: center;
+    padding: 18px;
+}
+
+#cancer {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 533px;
+    top: 658px;
+}
+
+#cancer img{
+    align-items: center;
+    padding: 18px;
+}
+
+#leo {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 361px;
+    top: 704px;
+}
+
+#leo img {
+    align-items: center;
+    padding: 18px;
+}
+
+#virgo {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 190px;
+    top: 658px;
+}
+
+#virgo img {
+    align-items: center;
+    padding: 18px;
+}
+
+#libra {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 64px;
+    top: 533px;
+}
+
+#libra img {
+    align-items: center;
+    padding: 18px;
+}
+
+#scorpio {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 18px;
+    top: 361px;
+}
+
+#scorpio img {
+    align-items: center;
+    padding: 18px;
+}
+
+#sagittarius {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 64px;
+    top: 190px;
+}
+
+#sagittarius img {
+    align-items: center;
+    padding: 18px;
+}
+
+#capricorn {
+    line-height: 100%;
+    position: absolute;
+    background-color: black;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 189px;
+    top: 64px;
+}
+
+#capricorn img {
+    align-items: center;
+    padding: 18px;
+}
+
+.resultWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 5rem;
+    flex-direction: column;
+}
+
+.zodiacImageCircle {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.zodiacImageCircle img {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
 }

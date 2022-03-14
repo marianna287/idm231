@@ -8,16 +8,66 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="card">
-            <form onsubmit="findZodiac(event)" class="formElements">
-                <input type="date" required>
-                <input type="submit" value="find your zodiac sign" onclick= "zodiacSign, zodiacDate"/>
-            </form>
-        </div>
+    <div class="header">
+        <h2>Find your Zodiac</h2>
     </div>
-    <label>Your Zodiac sign is</label><p id="sign"></p><br>
-    <label> because your birthday falls between </label><p id="zodiac"></p><br>
+    <div class="stage">
+        <div class="iconWrapper">
+            <div id="aquarius">
+                <img src="images/aquarius.png" alt="Aquarius">
+            </div> 
+            <div id="pisces"> 
+                <img src="images/pisces.png" alt="pisces">
+            </div>
+            <div class="js-button" id="aries" >
+                <img src="images/aries.png" alt="aries">
+            </div>
+            <div class="js-button" id="taurus" >
+                <img src="images/taurus.png" alt="taurus">
+            </div>
+            <div class="js-button" id="gemini" >
+                <img src="images/gemini.png" alt="gemini">
+            </div>
+            <div class="js-button" id="cancer" >
+                <img src="images/cancer.png" alt="cancer">
+            </div>
+            <div class="js-button" id="leo" >
+                <img src="images/leo.png" alt="leo">
+            </div>
+            <div class="js-button" id="virgo" >
+                <img src="images/virgo.png" alt="virgo">
+            </div>
+            <div class="js-button" id="libra" >
+                <img src="images/libra.png" alt="libra">
+            </div>
+            <div class="js-button" id="scorpio" >
+                <img src="images/scorpio.png" alt="scorpio">
+            </div>
+            <div class="js-button" id="sagittarius" >
+                <img src="images/sagittarius.png" alt="sagittarius">
+            </div>
+            <div class="js-button" id="capricorn" >
+                <img src="images/capricorn.png" alt="capricorn">
+            </div>
+        </div>
+    </div>    
+    <main>
+        <div class="wrapper">
+            <div class="card">
+                <form onsubmit="findZodiac(event)" class="formElements">
+                    <input type="date" required>
+                    <input type="submit" value="find your zodiac sign" onclick= "zodiacSign"/>
+                </form>
+            </div>
+        </div>
+        <div class="resultWrapper">
+            <div class="zodiacImageCircle">
+                <img class="zodiacImage" src="images/${zodiacSign}.png" alt="" />
+            </div> 
+            <h1 id="zodiac-sign"></h1>
+            <h2 id="zodiac-date"></h2>
+        </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
