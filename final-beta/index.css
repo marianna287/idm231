@@ -38,6 +38,12 @@ main {
     padding: 30px; 
 }
 
+.formElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 input[type="date"], input[type= "submit"] {
     padding: 0 20px;
     width: 100%;
@@ -48,7 +54,7 @@ input[type="date"], input[type= "submit"] {
 }
 
 input[type="date"] {
-    background-color: yellow;
+    background-color: palevioletred;
 }
 
 input[type="submit"] {
@@ -68,14 +74,6 @@ input:focus {
     outline:none;
 }
 
-.zodiacAnswer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 2rem;
-}
 
 .stage {
     position: relative;
@@ -86,7 +84,7 @@ input:focus {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 0 3rem 0 3rem;
 }
 
 div.iconWrapper {
@@ -96,12 +94,13 @@ div.iconWrapper {
     border-radius: 100%;
     display: inline-block;
     margin: 0;
+    background-color: black;
 }
 
 #aquarius {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100%;
     width: 99px;
     height: 99px;
@@ -115,16 +114,27 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#aquarius:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
 #pisces {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
     display: flex;
     left: 533px;
     top: 64px;
+}
+
+#pisces:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
 }
 
 #pisces img {
@@ -135,7 +145,7 @@ div.iconWrapper {
 #aries {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -149,27 +159,44 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#aries:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
 #taurus {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
     display: flex;
     left: 704px;
     top: 361px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #taurus img {
     align-items: center;
     padding: 18px;
+    width: auto;
+    height: auto;
 }
+
+#taurus:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 
 #gemini {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -183,10 +210,16 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#gemini:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
 #cancer {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -197,47 +230,71 @@ div.iconWrapper {
 
 #cancer img{
     align-items: center;
-    padding: 18px;
+    padding: 20px;
 }
+
+#cancer:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 
 #leo {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
     display: flex;
     left: 361px;
     top: 704px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #leo img {
     align-items: center;
-    padding: 18px;
+    padding: 20px;
 }
+
+#leo:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 
 #virgo {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
     display: flex;
     left: 190px;
     top: 658px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 #virgo img {
     align-items: center;
-    padding: 18px;
+    padding: 22px;
 }
+
+#virgo:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 
 #libra {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -251,10 +308,16 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#libra:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
 #scorpio {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -268,10 +331,15 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#scorpio:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 #sagittarius {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -283,12 +351,18 @@ div.iconWrapper {
 #sagittarius img {
     align-items: center;
     padding: 18px;
+    justify-content: center;
+}
+
+#sagittarius:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
 }
 
 #capricorn {
     line-height: 100%;
     position: absolute;
-    background-color: black;
+    background-color: #D3D3D3;
     border-radius: 100px;
     width: 99px;
     height: 99px;
@@ -302,6 +376,11 @@ div.iconWrapper {
     padding: 18px;
 }
 
+#capricorn:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
 .resultWrapper {
     display: flex;
     justify-content: center;
@@ -309,6 +388,7 @@ div.iconWrapper {
     align-items: center;
     padding: 5rem;
     flex-direction: column;
+    color: white;
 }
 
 .zodiacImageCircle {
