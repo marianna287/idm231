@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+main {
+    position: relative;
+    top: -42rem;
+    z-index: 50;
+}
+
+.header {
+    display: flex;
+    padding: 2rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    width: 10vw;
+    height: 5vw;
+    border-radius: 5px;
+    padding: 30px; 
+    display: flex;
+    justify-content: center;
+}
+
+.formElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input[type="date"], input[type= "submit"] {
+    padding: 0 20px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="date"] {
+    background-color: palevioletred;
+}
+
+input[type="submit"] {
+    background-color: pink;
+    cursor: pointer;
+    margin-top: 2px;
+    border: 2px solid transparent;
+    transition: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border: 2px solid pink;
+}
+
+input:focus {
+    outline:none;
+}
+
+
+.stage {
+    position: relative;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 3rem 0 3rem;
+}
+
+div.iconWrapper {
+    width: 822px;
+    height: 822px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0;
+    background-color: black;
+}
+
+#aquarius {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100%;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 361px;
+    top: 18px;
+    z-index: 999;
+}
+
+#aquarius img {
+    align-items: center;
+    padding: 18px;
+    z-index: 999;
+}
+
+#aquarius:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+    z-index: 999;
+}
+
+
+#pisces {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 533px;
+    top: 64px;
+    z-index: 999;
+}
+
+#pisces:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+    
+}
+
+#pisces img {
+    align-items: center;
+    padding: 18px;
+}
+
+#aries {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 658px;
+    top: 189px;
+    z-index: 999;
+}
+
+#aries img {
+    align-items: center;
+    padding: 18px;
+}
+
+#aries:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#taurus {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 704px;
+    top: 361px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#taurus img {
+    align-items: center;
+    padding: 18px;
+    width: auto;
+    height: auto;
+}
+
+#taurus:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#gemini {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 658px;
+    top: 532px;
+    z-index: 999;
+}
+
+#gemini img {
+    align-items: center;
+    padding: 18px;
+}
+
+#gemini:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#cancer {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 533px;
+    top: 658px;
+    z-index: 999;
+}
+
+#cancer img{
+    align-items: center;
+    padding: 22px;
+}
+
+#cancer:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#leo {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 361px;
+    top: 704px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#leo img {
+    align-items: center;
+    padding: 20px;
+}
+
+#leo:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#virgo {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 190px;
+    top: 658px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#virgo img {
+    align-items: center;
+    padding: 22px;
+}
+
+#virgo:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#libra {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 64px;
+    top: 533px;
+    z-index: 999;
+}
+
+#libra img {
+    align-items: center;
+    padding: 18px;
+}
+
+#libra:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+
+#scorpio {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 18px;
+    top: 361px;
+    z-index: 999;
+}
+
+#scorpio img {
+    align-items: center;
+    padding: 18px;
+}
+
+#scorpio:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+#sagittarius {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 64px;
+    top: 190px;
+    z-index: 999;
+}
+
+#sagittarius img {
+    align-items: center;
+    padding: 18px;
+    justify-content: center;
+}
+
+#sagittarius:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+#capricorn {
+    line-height: 100%;
+    position: absolute;
+    background-color: #D3D3D3;
+    border-radius: 100px;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    left: 189px;
+    top: 64px;
+    z-index: 999;
+}
+
+#capricorn img {
+    align-items: center;
+    padding: 18px;
+}
+
+#capricorn:hover {
+    background: rgb(255,56,144);
+    background: linear-gradient(120deg, rgba(255,56,144,1) 0%, rgba(91,21,255,1) 100%);
+}
+
+.resultWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 2rem 5rem 2rem 5rem;
+    flex-direction: column;
+    color: white;
+}
+
+.zodiacImageCircle {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.zodiacImageCircle img {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    outline: none;
+}
+
+
+
