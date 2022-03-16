@@ -386,15 +386,15 @@ div.iconWrapper {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 2rem 5rem 2rem 5rem;
     flex-direction: column;
     color: white;
 }
 
 .zodiacImageCircle {
     border-radius: 100%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
 }
 
@@ -405,4 +405,6 @@ div.iconWrapper {
     padding: 20px;
     outline: none;
 }
+
+
 
