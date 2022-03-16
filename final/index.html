@@ -15,50 +15,51 @@
         </div>
         <div class="modal" id="modal">
             <div class="modal-header">
-                <h2 class="helpTitle">Help</h2>
+                <h3 class="helpTitle">Help</h3>
                 <button data-close-button class="closeButton">&times;</button>
             </div>
-            <div class="modal-body"></div>
+            <div class="modal-body">
+                <p>Click on the zodiac symbols or enter your birthday into the calendar to get matched with your own personal zodiac sign.</p>
+            </div>
         </div>
-        <div id="overlay"></div>
     </div>
     <div class="stage">
         <div class="iconWrapper">
             <div class="js-button" id="aquarius">
-                <img src="images/aquarius.png" alt="aquarius"> 
+                <img src="images/aquarius2.png" alt="aquarius"> 
             </div> 
             <div class="js-button" id="pisces"> 
-                <img src="images/pisces.png" alt="pisces">
+                <img src="images/pisces2.png" alt="pisces">
             </div>
             <div class="js-button" id="aries">
-                <img src="images/aries.png" alt="aries">
+                <img src="images/aries2.png" alt="aries">
             </div>
             <div class="js-button" id="taurus">
-                <img src="images/taurus.png" alt="taurus">
+                <img src="images/taurus2.png" alt="taurus">
             </div>
             <div class="js-button" id="gemini">
-                <img src="images/gemini.png" alt="gemini">
+                <img src="images/gemini2.png" alt="gemini">
             </div>
             <div class="js-button" id="cancer">
-                <img src="images/cancer.png" alt="cancer">
+                <img src="images/cancer2.png" alt="cancer">
             </div>
             <div class="js-button" id="leo">
-                <img src="images/leo.png" alt="leo">
+                <img src="images/leo2.png" alt="leo">
             </div>
             <div class="js-button" id="virgo">
-                <img src="images/virgo.png" alt="virgo">
+                <img src="images/virgo2.png" alt="virgo">
             </div>
             <div class="js-button" id="libra">
-                <img src="images/libra.png" alt="libra">
+                <img src="images/libra2.png" alt="libra">
             </div>
             <div class="js-button" id="scorpio">
-                <img src="images/scorpio.png" alt="scorpio">
+                <img src="images/scorpio2.png" alt="scorpio">
             </div>
             <div class="js-button" id="sagittarius">
-                <img src="images/sagittarius.png" alt="sagittarius">
+                <img src="images/sagittarius2.png" alt="sagittarius">
             </div>
             <div class="js-button" id="capricorn">
-                <img src="images/capricorn.png" alt="capricorn">
+                <img src="images/capricorn2.png" alt="capricorn">
             </div>
         </div>
     </div>    
@@ -67,7 +68,7 @@
             <div class="card">
                 <form onsubmit="findZodiac(event)" class="formElements">
                     <input type="date" required>
-                    <input type="submit" value="find your zodiac sign" onclick= "zodiacSign"/>
+                    <input type="submit" value="Find your zodiac sign" onclick= "zodiacSign"/>
                 </form>
             </div>
         </div>
@@ -79,6 +80,7 @@
             <h2 id="zodiac-date"></h2>
         </div>
     </main>
+    <div id="overlay"></div>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Almarena';
+    src: url(fonts/Almarena\ Display\ Bold.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Almarena';
+    src: url(fonts/Almarena\ Display\ Regular.woff) format('woff');
+    font-weight: regular;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +25,7 @@
 main {
     position: relative;
     top: -42rem;
-    z-index: 50;
+    z-index: 40;
 }
 
 .header {
@@ -24,20 +41,30 @@ main {
     padding: 15px;
 }
 
+.header h2 {
+    font-family: 'Almarena';
+    font-weight: bold;
+}
+
 .helpButton {
     width: 100px;
     height: 30px;
     border-radius: 25px;
     position: relative;
     z-index: 999;
+    border: none;
 }
 
 .helpButton:hover {
-    background-color: aqua;
+    background-color: palevioletred;
+    color: white;
 }
 
 .helpButton h3 {
     padding: 0 5px 0 5px;
+    font-weight: normal;
+    color: darkgrey;
+    font-family: 'Almarena';
 }
 
 .header h2 {
@@ -56,8 +83,8 @@ main {
 
 .card {
     width: 20vw;
-    height: 6vw;
-    border-radius: 5px; 
+    height: 7vw;
+    border-radius: 15px; 
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -72,14 +99,16 @@ main {
 input[type="date"], input[type= "submit"] {
     padding: 0 20px;
     width: 100%;
-    height: 30px;
+    height: 35px;
     border: none;
-    border-radius: 3px;
+    border-radius: 20px;
     font-size: 16px;
 }
 
 input[type="date"] {
     background-color: palevioletred;
+    font-family: 'Almarena';
+    font-weight: normal;
 }
 
 input[type="submit"] {
@@ -88,6 +117,8 @@ input[type="submit"] {
     margin-top: 2px;
     border: 2px solid transparent;
     transition: 3px;
+    font-family: 'Almarena';
+    font-weight: normal;
 }
 
 input[type="submit"]:hover {
@@ -110,6 +141,7 @@ input:focus {
     align-content: center;
     align-items: center;
     margin: 0 3rem 0 3rem;
+    padding-bottom: 3rem;
 }
 
 div.iconWrapper {
@@ -119,7 +151,8 @@ div.iconWrapper {
     border-radius: 100%;
     display: inline-block;
     margin: 0;
-    background-color: black;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #aquarius {
@@ -133,6 +166,7 @@ div.iconWrapper {
     left: 361px;
     top: 18px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #aquarius img {
@@ -159,6 +193,7 @@ div.iconWrapper {
     left: 533px;
     top: 64px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #pisces:hover {
@@ -183,6 +218,7 @@ div.iconWrapper {
     left: 658px;
     top: 189px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #aries img {
@@ -210,6 +246,7 @@ div.iconWrapper {
     justify-content: center;
     overflow: hidden;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #taurus img {
@@ -236,6 +273,7 @@ div.iconWrapper {
     left: 658px;
     top: 532px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #gemini img {
@@ -260,6 +298,7 @@ div.iconWrapper {
     left: 533px;
     top: 658px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #cancer img{
@@ -287,6 +326,7 @@ div.iconWrapper {
     justify-content: center;
     overflow: hidden;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #leo img {
@@ -314,6 +354,7 @@ div.iconWrapper {
     justify-content: center;
     overflow: hidden;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #virgo img {
@@ -338,6 +379,7 @@ div.iconWrapper {
     left: 64px;
     top: 533px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #libra img {
@@ -362,6 +404,7 @@ div.iconWrapper {
     left: 18px;
     top: 361px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #scorpio img {
@@ -385,6 +428,7 @@ div.iconWrapper {
     left: 64px;
     top: 190px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #sagittarius img {
@@ -409,6 +453,7 @@ div.iconWrapper {
     left: 189px;
     top: 64px;
     z-index: 900;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 #capricorn img {
@@ -428,7 +473,13 @@ div.iconWrapper {
     align-items: center;
     padding: 2rem 5rem 2rem 5rem;
     flex-direction: column;
-    color: white;
+    background-color: transparent;
+    font-family: 'Almarena';
+}
+
+.resultWrapper h2 {
+    font-weight: normal;
+    padding: 10px;
 }
 
 .zodiacImageCircle {
@@ -442,8 +493,8 @@ div.iconWrapper {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 20px;
     outline: none;
+    padding: 20px;
 }
 
 
@@ -473,8 +524,9 @@ div.iconWrapper {
     align-items: center;
 }
 
-div.modal-header {
-    padding: none;
+.modal-header h3 {
+    font-family: 'Almarena';
+    font-weight: bold;
 }
 
 .closeButton {
@@ -492,7 +544,10 @@ div.modal-header {
 }
 
 .modal-body {
-    padding: .5rem .75rem;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Almarena';
+    font-weight: normal;
 }
 
 #overlay {
