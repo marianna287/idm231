@@ -21,30 +21,27 @@ main {
 
 
 .wrapper {
-    height: 300px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 999;
+    z-index: 10;
 }
 
 .card {
-    width: 40vh;
-    height: 40vh;
+    width: 20vw;
+    height: 10vw;
     border-radius: 5px;
-    z-index: 50;
-    position: relative;
-    padding: 0;
+    border: 2px solid black;
+    padding: 30px; 
 }
 
 .formElements {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 200px;
-    height: 100px;
 }
 
 input[type="date"], input[type= "submit"] {
@@ -386,13 +383,12 @@ div.iconWrapper {
 
 .resultWrapper {
     display: flex;
+    justify-content: center;
+    align-content: center;
     align-items: center;
-    justify-content: flex-end;
-    padding: 0 5rem 2rem 5rem;
+    padding: 2rem 5rem 2rem 5rem;
     flex-direction: column;
     color: white;
-    position: relative;
-    z-index: 20;
 }
 
 .zodiacImageCircle {
@@ -409,6 +405,9 @@ div.iconWrapper {
     padding: 20px;
     outline: none;
 }
+
+
+
 
 
 

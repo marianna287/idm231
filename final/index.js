@@ -2,72 +2,84 @@
 
 const orderedZodiacSigns = {
   "aquarius": {
+    imageElement: new Image('images/aquarius.png'),
     sign: "Aquarius",
     date: "January 20th - February 18th",
     audio: new Audio('sounds/water2.mp3')
   },
   
   "pisces": {
+    imageElement: new Image('images/pisces.png'),
     sign: "Pisces",
     date: "February 19th - March 20th",
     audio: new Audio('sounds/bubbles.mp3')
   },
   
   "aries": {
+    imageElement: new Image('images/aries.png'),
     sign: "Aries",
     date: "March 21 - April 19th",
     audio: new Audio('sounds/fire2.mp3')
   },
   
   "taurus": {
+    imageElement: new Image('images/taurus.png'),
     sign: "Taurus",
     date: "April 20th - May 20th",
     audio: new Audio('sounds/bull2.mp3')
   },
 
   "gemini": {
+    imageElement: new Image('images/gamini.png'),
     sign: "Gemini",
     date: "May 21 - June 20th",
     audio: new Audio('sounds/wind2.mp3')
   },
 
   "cancer": {
+    imageElement: new Image('images/cancer.png'),
     sign: "Cancer",
     date: "June 21 - July 22",
     audio: new Audio('sounds/crying.mp3')
   },
 
   "leo": {
+    imageElement: new Image('images/leo.png'),
     sign: "Leo",
     date: "July 23rd - August 22",
     audio: new Audio('sounds/lion2.mp3')
   },
 
   "virgo": {
+    imageElement: new Image('images/virgo.png'),
     sign: "Virgo",
     date: "August 23rd - September 22nd",
     audio: new Audio('sounds/heavens2.mp3')
   },
 
   "libra": {
+    imageElement: new Image('images/libra.png'),
     sign: "Libra",
     date: "September 23rd - October 22",
     audio: new Audio('sounds/chimes2.mp3')
   },
 
   "scorpio": {
+    imageElement: new Image('images/scorpio.png'),
     sign: "Scorpio",
     date: "October 23rd - November 21",
     audio: new Audio('sounds/waterfall.mp3')
   },
 
   "sagittarius": {
+    imageElement: new Image('images/sagittarius.png'),
     sign: "Sagittarius",
     date: "November 22 - December 21",
     audio: new Audio('sounds/arrow.mp3')
   },
 
   "capricorn": {
+    imageElement: new Image('images/capricorn.png'),
     sign: "Capricorn",
     date: "December 22nd - January 19th",
     audio: new Audio('sounds/goats2.mp3')
